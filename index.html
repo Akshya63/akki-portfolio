@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akki-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c515e3d218.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <span><span class="aki">Akki</span><span class="port">-Portfolio.</span></span>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI Full Stack Developer </p>
+                <h2>Hello,It's Me<span>Akshya Kumar </span><br>Mahankuda From India</h2>
+            </div>
+        </div>
+    </div>
+    <!------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/akshya1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Akshya Kumar Mahankuda a passionate and dedicated Full Stack Developer with a strong
+                        background in creating dynamic, user-friendly web applications. My expertise spans both frontend
+                        and backend development, allowing me to deliver comprehensive solutions that meet the unique
+                        needs of each project.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><Span>Web Development</Span><br>Web app Development</li>
+                            <li><Span>Front-End-Web</Span><br>HTML4/5,CSS3,Bootstrap5,Material-UI,SaSS,JS,jQuery with
+                                AJAX,React.js
+                            </li>
+                            <li><Span>Programing Language</Span><br>Proficient in JavaScript/ES6,TypeScript,Python and
+                                SQL</li>
+                            <li><Span>Back-End-Server</Span><br>NodeJs,Express.JS,REST API-JSON and mongoDB</li>
+                            <li><span>Database</span><br>Understanding of database concepts and experience with Oracle,
+                                MySQL and MongoDB.</li>
+                            <li><span>Version Control</span><br>Proficient in Git and GitHub for version control and
+                                collaborative development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><Span>Online Video Tutorial Library</Span><br>The Online Video Tutorial Library aims to
+                                provide users with a comprehensive platform to access, manage, and track video tutorials
+                                across various
+                                subjects. The platform will support user registration,
+                                login, video browsing, and admin functionalities to manage the video content.</li>
+                            <li><Span>ToDo List App</Span><br>The ToDo App is a simple yet powerful tool designed to
+                                help users manage their daily tasks efficiently.
+                                The app allows users to create, view, update, and delete tasks, helping them stay
+                                organized and productive.
+                                The app also includes user authentication to ensure data privacy and personalized task
+                                management.
+                            </li>
+                            <li><Span>MERN Recipe App</Span><br>The MERN Recipe App is a full-stack web application
+                                designed to provide users with a comprehensive
+                                platform for browsing, sharing, and managing recipes. The app utilizes the MERN stack
+                                (MongoDB, Express.js, React.js, Node.js)
+                                to deliver a seamless and interactive user experience. Users can register, log in,
+                                create and share their own recipes, and explore recipes shared by others.
+
+                            </li>
+                            <li><Span>React Shopper Routing App</Span><br>The React Shopper Routing App is an e-commerce
+                                web application designed to provide users with a seamless shopping experience.
+                                Built using React.js, this app features intuitive navigation and routing, allowing users
+                                to browse products, view details,
+                                add items to their cart, and proceed to checkout. The app also includes user
+                                authentication and an admin panel for managing products and orders.</li>
+                            <li><span>Ecommerce Nike Store</span><br>The Ecommerce Nike Store is a full-featured online
+                                retail platform designed to showcase and sell Nike products. The platform offers a
+                                seamless shopping experience, allowing users to browse various Nike products, view
+                                detailed information, manage their shopping cart, and complete purchases. The project
+                                includes user authentication, a user-friendly interface, and an admin panel for managing
+                                products and orders.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><Span>2021-2023</Span><br>Master Of Computer Application - BPUT - University <br>
+                                College Name - United School Of Business Management (bbsr)</li>
+                            <li><Span>2014-2017</Span><br>Bachelor Of Computer Application - Berhampur - University <br>
+                                College Name - Gayatri Institute Of Science And Technology (Berhampur)</li>
+                            <li><Span>2012-2014</Span><br>Plus2 Science <br>College Name - T.S.D College B.D.PUR
+                                (Ganjam)</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p> Custom Web Application Development: Tailored web applications that meet your specific business
+                        needs. <br>
+                        Responsive Web Design: Ensuring your website looks great and functions perfectly on all devices.
+                        <br>
+                        Performance Optimization: Enhancing the speed and efficiency of your web applications. <br>
+                        Maintenance & Support: Ongoing maintenance and support to keep your applications up-to-date and
+                        running smoothly.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-pull-request"></i>
+                    <h2>Backend Development</h2>
+                    <p> API Development: Developing secure and scalable RESTful APIs with Express.js. <br>
+                        Database Management: Utilizing MongoDB (Mongoose) for efficient data storage and retrieval. <br>
+                        User Authentication: Implementing secure user authentication and authorization using JWT. <br>
+                        Password Security: Ensuring password security with bcrypt for hashing and secure storage. <br>
+                        Role-Based Access Control (RBAC): Setting up admin and user roles for better access management.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-file-code"></i>
+                    <h2>Full Stack Solutions</h2>
+                    <p> User Authentication Systems: Developing comprehensive user authentication systems including
+                        registration, login, and logout functionalities. <br>
+                        Admin Panels: Creating admin panels for effective user management with features like create,
+                        read, update, and delete (CRUD) operations. <br>
+                        Search and Pagination: Implementing search and pagination functionalities for better data
+                        navigation and management. <br>
+                        Error Handling: Ensuring robust error handling with user-friendly messages for a smooth user
+                        experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------Portfolio-------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/video.png">
+                    <div class="layer">
+                        <h3>React-Online-video-library</h3>
+                        <p>Understanding how to design a Video Library like YouTube application that allows admin to
+                            upload,
+                            modify and delete videos. Customer can watch videos after register and login.</p>
+                        <a href="https://react-video-library-4615b.firebaseapp.com/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/todo.png">
+                    <div class="layer">
+                        <h3>ToDo-List-App</h3>
+                        <p>Develop a to-do list application with features such as Users can add new tasks with a title,
+                            description, due date, priority level. adding, editing, marking and delete tasks as
+                            complete.
+                            Implement drag-and-drop functionality for task organization.</p>
+                        <a href="https://to-do-list-26ad0.firebaseapp.com/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/mern.png">
+                    <div class="layer">
+                        <h3>Mern-Recipe-App</h3>
+                        <p>The MERN Recipe App is a full-featured web application developed using the MERN stack
+                            (MongoDB, Express.js, React.js, Node.js). This app serves as a platform for users to
+                            login,Register,adding,save profile and logout promoting an interactive and community-driven
+                            environment for food enthusiasts.</p>
+                        <a href="https://mern-recipee-app.netlify.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/shopper.png">
+                    <div class="layer">
+                        <h3>Shopper-Routing-App</h3>
+                        <p>The Shopper Routing App is a web application designed to enhance the shopping experience by
+                            optimizing the route for shoppers. This app helps users create an efficient shopping path,
+                            minimizing time and effort spent in stores.
+                            it leverages modern web technologies to deliver a seamless and
+                            user-friendly experience.</p>
+                        <a href="https://shopper-routing-app.netlify.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ecommers.png">
+                    <div class="layer">
+                        <h3>Ecommerce-Nike-Store</h3>
+                        <p>developing an e-commerce website for Online Product
+                            Sale.
+                            In order to facilitate online purchase a shopping cart is
+                            provided to the user.</p>
+                        <a href=" https://akshya63.github.io/Ecommerce-Nike-Store/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Temperature.png">
+                    <div class="layer">
+                        <h3>Temperature-converter</h3>
+                        <p>The Temperature Converter Project is a simple yet essential web application designed to
+                            convert temperatures between different units. This project serves as a practical tool for
+                            users who need to quickly and accurately convert temperatures between Celsius, Fahrenheit,
+                            and Kelvin. It aims to provide an intuitive and user-friendly interface with real-time
+                            conversion results.</p>
+                        <a href="https://akshya63.github.io/Temperature-converter/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------------Contact--------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> akshyamahankuda97@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +918598048892</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/akshya.mahankuda"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/Akshya859"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/akshya63_akki/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/akshyakumarmahankuda/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Akshya63"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Akshya_resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Thank you for visiting and showing interest <br>
+            Copyright © 2024 Akshya.<i class="fa-solid fa-heart"></i> All Rights Reserved
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+
+
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxGrX0wpNaKHop86EdG0ABxHA1HbXIQ5yt4R4ZsDFiKTHUm0eRxGi6NDrk-ldXl-7IF/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 4000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
